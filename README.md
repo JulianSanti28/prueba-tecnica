@@ -25,9 +25,10 @@ Método: GET
 http://localhost:8080/movie?id=15
 ```
 Este servicio REST responderá con un código de estado 200 (Ok) en caso de realizar un proceso correcto y además obtener un registro que coincide con el id dado.
-En caso de no encontrar el id, el servicio responderá con un código de estado 404 Not Found, y un cuerpo de la solicitud de una película sin ninguna información.
 
 ![image](https://user-images.githubusercontent.com/67648220/185752050-5cb785a3-1157-4897-8d68-96f9cc78f4b5.png)
+
+En caso de no encontrar el id, el servicio responderá con un código de estado 404 Not Found, y un cuerpo de la solicitud de una película sin ninguna información.
 
 ![image](https://user-images.githubusercontent.com/67648220/185752069-9ed82bf8-1ad6-4ba5-a052-92c35e9e7c47.png)
 
@@ -39,7 +40,7 @@ Método: GET
 ```sh
 http://localhost:8080/movies?total=5&order=asc
 ```
-En este caso los resultados se limitan a 5 registros ordenador de forma ascendente por el id de cada una de las películas.
+En este caso los resultados se limitan a 5 registros ordenador de forma ascendente por el nombre de cada una de las películas.
 Este servicio responderá con un código de estado 200(Ok) en caso de encontrar registros y procesar correctamente la petición.
 
 La respuesta correcta sería la siguiente
