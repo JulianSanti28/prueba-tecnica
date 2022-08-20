@@ -1,7 +1,6 @@
 package co.software.colombia.pruebatecnica.dao;
 
 import co.software.colombia.pruebatecnica.model.Movie;
-
 import java.util.List;
 
 public interface IMovieRepository {
