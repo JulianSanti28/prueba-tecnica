@@ -13,6 +13,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*Inversión de control*/
 @Repository
 public class MovieRepositoryImpl implements  IMovieRepository{
 
@@ -32,7 +33,7 @@ public class MovieRepositoryImpl implements  IMovieRepository{
                 if(Integer.parseInt(registro[0]) == id)//Si el id del registro es el que se está buscando, se guarda
                     movies.add(Movie.builder().id(Integer.parseInt(registro[0])).film(registro[1]).genre(registro[2]).studio(registro[3]).score(Integer.parseInt(registro[4])).year(Integer.parseInt(registro[5])).build());
             });
-            return movies.stream().filter(m -> m.getId() == id).findFirst().orElse(null);//Retorme el elemento obtenido con ese id, si no hay nada, retorne nulo
+            return movies.stream().findFirst().orElse(null);//Retorme el elemento obtenido con ese id, si no hay nada, retorne nulo
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         }catch (IOException e) {
@@ -53,18 +54,10 @@ public class MovieRepositoryImpl implements  IMovieRepository{
                 if(registro[0].toLowerCase().equals("id")) return;//Omitiendo la primer fila (nombre de las columnas)
                 movies.add(Movie.builder().id(Integer.parseInt(registro[0])).film(registro[1]).genre(registro[2]).studio(registro[3]).score(Integer.parseInt(registro[4])).year(Integer.parseInt(registro[5])).build()); //Creando y guardando todas las películas
             });
-            List<Movie> returnList = new ArrayList<>();//Lista a retornar después de filtrar
-            switch (order.toLowerCase()){//Validar qué orden desea el cliente
-                case "asc"://Orden ascendente, crear el comparador para ordenar por nombre de la película
-                    Comparator<Movie> byNameAsc = (Movie a, Movie b) -> a.getFilm().compareTo(b.getFilm());
-                    returnList = movies.stream().sorted(byNameAsc).collect(Collectors.toList());
-                    break;
-                case "desc"://Orden ascendente, ordena por el nombre de mayor a menor
-                    Comparator<Movie> byNameDesc = (Movie a, Movie b) -> b.getFilm().compareTo(a.getFilm());
-                    returnList = movies.stream().sorted(byNameDesc).collect(Collectors.toList());
-                    break;
-            }
-            return returnList.stream().limit(total).collect(Collectors.toList());//Limita el número de registros al total que desea el cliente
+            var byNameAsc = (Comparator<Movie>) (Movie a, Movie b) -> a.getFilm().compareTo(b.getFilm());
+            var byNameDesc = (Comparator<Movie>) (Movie a, Movie b) -> b.getFilm().compareTo(a.getFilm());
+            //Se ordena dependiendo lo que desee el cliente y posteriormente el stream ordenado se limita al número dado por el parámetro
+            return  movies.stream().sorted(order.equals("asc") ? byNameAsc : byNameDesc).limit(total).collect(Collectors.toList());
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         }catch (IOException e) {

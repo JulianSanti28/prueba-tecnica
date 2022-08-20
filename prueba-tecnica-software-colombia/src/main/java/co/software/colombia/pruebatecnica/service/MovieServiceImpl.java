@@ -5,6 +5,7 @@ import co.software.colombia.pruebatecnica.model.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -20,6 +21,7 @@ public class MovieServiceImpl implements IMovieService{
 
     @Override
     public List<Movie> getAllMoviesOrderByAlphabet(int total, String order) {
+        if(!order.toLowerCase().equals("asc") && !order.toLowerCase().equals("desc")) return new ArrayList<>();
         return this.movieRepository.getAllMoviesOrderByAlphabet(total, order);
     }
 
