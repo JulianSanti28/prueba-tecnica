@@ -19,6 +19,8 @@ El proyecto ya cuenta en su base path con el archivo usado como repositorio (mov
 
 ## El primer enpoint permite obtener un registro dentro del repositorio por el id de la película. Acceda a esta URL desde un cliente REST como Postman o el mismo navegador web para acceder a la respuesta del servicio.
 
+Método: GET
+
 ```sh
 http://localhost:8080/movie?id=15
 ```
@@ -31,6 +33,8 @@ En caso de no encontrar el id, ek servicio responderá con un código de estado 
 
 
 ## El segundo enpoint permite obtener una cantidad de registros dada ordenados de forma descendente o ascendente según sea el valor del parámetro en la URL. Acceda a esta URL para interactuar con el servicio.
+
+Método: GET 
 
 ```sh
 http://localhost:8080/movies?total=5&order=asc
