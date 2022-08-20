@@ -45,7 +45,7 @@ Este servicio responderá con un código de estado 200(Ok) en caso de encontrar 
 
 La respuesta correcta sería la siguiente
 
-
+![image](https://user-images.githubusercontent.com/67648220/185762578-7f79aa77-1fa3-43e5-9a83-333c4a9ec7d0.png)
 
 En caso no encontrar coincidencias con algún valor de entrada, entonces la respuesta tendrá un código de estado 400 Bad Request y además responderá con un cuerpo que refleja un mensaje.
 
