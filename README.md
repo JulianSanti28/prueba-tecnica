@@ -41,7 +41,8 @@ Método: GET
 http://localhost:8080/movies?total=5&order=asc
 ```
 En este caso los resultados se limitan a 5 registros ordenador de forma ascendente por el nombre de cada una de las películas.
-Este servicio responderá con un código de estado 200(Ok) en caso de encontrar registros y procesar correctamente la petición.
+Este servicio responderá con un código de estado 200(Ok) en caso de encontrar registros y procesar correctamente la petición. El atributo que específica el tipo
+de ordenamiento (asc o desc) se puede envíar también usando mayúsculas. El sistema tolera este comportamiento.
 
 La respuesta correcta sería la siguiente
 
