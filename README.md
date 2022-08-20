@@ -60,7 +60,7 @@ La respuesta obtenida sería la siguiente
 
 Como se logra identificar, el cliente está haciendo un mal uso del atributo "order" por ende es una petición que no se encuentra bien formada.
 
-## El tercer y último endpointpermite guardar un registro dentro del repositorio. Se espera recibir el cuerpo del modelo y recibir un mensaje de confirmación del registro. Acceda a esta URL para acceder el servicio.
+## El tercer y último endpoint permite guardar un registro dentro del repositorio. Se espera recibir el cuerpo del modelo Movie y recibir un mensaje de confirmación del registro. Acceda a esta URL para acceder el servicio.
 
 Método : POST
 
