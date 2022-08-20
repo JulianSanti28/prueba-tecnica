@@ -4,6 +4,7 @@ plugins {
 	id 'java'
 }
 
+
 group = 'prueba-tecnica-software-colombia'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
@@ -27,6 +28,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 
+}
+
+jar {
+	archiveBaseName = 'gs-gradle'
+	archiveVersion =  '0.1.0'
 }
 
 tasks.named('test') {
