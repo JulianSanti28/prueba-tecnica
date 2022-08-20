@@ -1,2 +1,8 @@
-# prueba-tecnica
-Prueba técnica de ingreso a la compañía Software Colombia como Desarrollador Backend.
+# Descripción General
+Este desarrollo se encuentra elaborado en dentro de la tecnología de Spring Boot, se hace uso de lenguaje de programación Java en su versión 11. Además la gestión de dependencias se hace atraves del gestor Gradle.
+
+# Clone este repositorio siguiendo las siguientes instrucciones
+Ubíquese en la carpeta en la que desea descargar el proyecto, a continuación ejecute el siguiente comando git
+```sh
+git clone https://github.com/JulianSanti28/product_management.git
+```
