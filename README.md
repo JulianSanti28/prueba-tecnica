@@ -12,3 +12,5 @@ A continuacón se descargará el repositorio y dentro de la carpeta generada est
 El proyecto ya cuenta en su base path con el archivo usado como repositorio (movies.csv). No es necesario hacer nada adicional con este archivo.
 
 - [x] Usando el IDE, simplemente limpie y construya el proyecto. Luego vaya al método principal y ejecute el programa
+- [x] El proyecto iniciará en el puerto 8080.
+- [ ] Ahora está listo para recibir peticiones en cada uno de sus 3 endpoints.  
