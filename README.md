@@ -55,7 +55,48 @@ La respuesta obtenida sería la siguiente
 
 Como se logra identificar, el cliente está haciendo un mal uso del atributo "order" por ende es una petición que no se encuentra bien formada.
 
-## El tercer u último endpointpermite guardar un registro dentro del repositorio. Se espera recibir el cuerpo del modelo y recibir un mensaje de confirmación del registro.
+## El tercer u último endpointpermite guardar un registro dentro del repositorio. Se espera recibir el cuerpo del modelo y recibir un mensaje de confirmación del registro. Acceda a esta URL para acceder el servicio.
+
+Método : POST
+
+```sh
+http://localhost:8080/movie
+```
+Envíe dentro del cuerpo la petición la información a guardar, por ejemplo:
+
+```sh
+{
+"id": 79,
+"film":"Parasite",
+"genre": "Drama",
+"studio": "Barunson E&A",
+"score": 97,
+"year": 2019
+}
+```
+
+Recibirá un código de estado 201 Created en caso de guardar correctamente y un mensaje como el siguiente
+
+![image](https://user-images.githubusercontent.com/67648220/185752520-f5ccd614-909e-4ab1-8f70-09f4eb6a0e8c.png)
+
+En caso de que no se pueda realizar el registro, quizá por información inválida, por ejemplo
+
+```sh
+{
+"id": 79,
+"film":"Parasite",
+"genre": "Drama",
+"studio": "Barunson E&A",
+"score": 97,
+"year": 0
+}
+```
+En donde el año es 0, el servicio responderá de la siguiente manera.
+
+![image](https://user-images.githubusercontent.com/67648220/185752576-0317ef23-7ac1-435e-bfcd-7ac3081a805c.png)
+
+En donde se específica el mensaje y además el código 500 de Error Interno del Servidor.
+
 
 
 
