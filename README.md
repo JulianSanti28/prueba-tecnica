@@ -6,6 +6,8 @@ Ubíquese en la carpeta en la que desea descargar el proyecto, a continuación e
 ```sh
 git clone https://github.com/JulianSanti28/prueba-tecnica.git
 ```
+A continuacón se descargará el repositorio y dentro de la carpeta generada estará el proyecto. Este recibe el nombre de: "prueba-tecnica-software-colombia"
+
 # Instrucciones de compilación
 El proyecto ya cuenta en su base path con el archivo usado como repositorio (movies.csv). No es necesario hacer nada adicional con este archivo.
 
