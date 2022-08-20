@@ -25,6 +25,11 @@ http://localhost:8080/movie?id=15
 Este servicio REST responderá con un código de estado 200 (Ok) en caso de realizar un proceso correcto y además obtener un registro que coincide con el id dado.
 En caso de no encontrar el id, ek servicio responderá con un código de estado 404 Not Found, y un cuerpo de la solicitud de una película sin ninguna información.
 
+![image](https://user-images.githubusercontent.com/67648220/185752050-5cb785a3-1157-4897-8d68-96f9cc78f4b5.png)
+
+![image](https://user-images.githubusercontent.com/67648220/185752069-9ed82bf8-1ad6-4ba5-a052-92c35e9e7c47.png)
+
+
 ## El segundo enpoint permite obtener una cantidad de registros dada ordenados de forma descendente o ascendente según sea el valor del parámetro en la URL. Acceda a esta URL para interactuar con el servicio.
 
 ```sh
