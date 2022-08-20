@@ -25,7 +25,7 @@ Método: GET
 http://localhost:8080/movie?id=15
 ```
 Este servicio REST responderá con un código de estado 200 (Ok) en caso de realizar un proceso correcto y además obtener un registro que coincide con el id dado.
-En caso de no encontrar el id, ek servicio responderá con un código de estado 404 Not Found, y un cuerpo de la solicitud de una película sin ninguna información.
+En caso de no encontrar el id, el servicio responderá con un código de estado 404 Not Found, y un cuerpo de la solicitud de una película sin ninguna información.
 
 ![image](https://user-images.githubusercontent.com/67648220/185752050-5cb785a3-1157-4897-8d68-96f9cc78f4b5.png)
 
