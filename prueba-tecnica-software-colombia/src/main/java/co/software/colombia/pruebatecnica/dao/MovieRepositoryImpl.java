@@ -33,6 +33,7 @@ public class MovieRepositoryImpl implements  IMovieRepository{
                 if(Integer.parseInt(registro[0]) == id)//Si el id del registro es el que se está buscando, se guarda
                     movies.add(Movie.builder().id(Integer.parseInt(registro[0])).film(registro[1]).genre(registro[2]).studio(registro[3]).score(Integer.parseInt(registro[4])).year(Integer.parseInt(registro[5])).build());
             });
+            readerFile.close();
             return movies.stream().findFirst().orElse(null);//Retorme el elemento obtenido con ese id, si no hay nada, retorne nulo
         }catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -54,6 +55,7 @@ public class MovieRepositoryImpl implements  IMovieRepository{
                 if(registro[0].toLowerCase().equals("id")) return;//Omitiendo la primer fila (nombre de las columnas)
                 movies.add(Movie.builder().id(Integer.parseInt(registro[0])).film(registro[1]).genre(registro[2]).studio(registro[3]).score(Integer.parseInt(registro[4])).year(Integer.parseInt(registro[5])).build()); //Creando y guardando todas las películas
             });
+            readerFile.close();
             var byNameAsc = (Comparator<Movie>) (Movie a, Movie b) -> a.getFilm().compareTo(b.getFilm());
             var byNameDesc = (Comparator<Movie>) (Movie a, Movie b) -> b.getFilm().compareTo(a.getFilm());
             //Se ordena dependiendo lo que desee el cliente y posteriormente el stream ordenado se limita al número dado por el parámetro
