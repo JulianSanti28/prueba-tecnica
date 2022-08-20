@@ -37,17 +37,25 @@ http://localhost:8080/movies?total=5&order=asc
 ```
 En este caso los resultados se limitan a 5 registros ordenador de forma ascendente por el id de cada una de las películas.
 Este servicio responderá con un código de estado 200(Ok) en caso de encontrar registros y procesar correctamente la petición.
-En caso no encontrar coincidencias con algún valor de entrada, entonces la respuesta tendrá un código de estado 400 Bad Request y además responderá con un cuerpo que refleja el siguiente mensaje:
 
-![image](https://user-images.githubusercontent.com/67648220/185751929-f53d0f6f-095e-4daf-92a8-dc2790aac5a2.png)
+La respuesta correcta sería la siguiente
+
+
+
+En caso no encontrar coincidencias con algún valor de entrada, entonces la respuesta tendrá un código de estado 400 Bad Request y además responderá con un cuerpo que refleja un mensaje.
 
 Un ejemplo de una petición sin coincidencias podría ser el siguiente:
 
 ```sh
 http://localhost:8080/movies?total=5&order=cvv
 ```
+La respuesta obtenida sería la siguiente
+
+![image](https://user-images.githubusercontent.com/67648220/185751929-f53d0f6f-095e-4daf-92a8-dc2790aac5a2.png)
 
 Como se logra identificar, el cliente está haciendo un mal uso del atributo "order" por ende es una petición que no se encuentra bien formada.
+
+## El tercer u último endpointpermite guardar un registro dentro del repositorio. Se espera recibir el cuerpo del modelo y recibir un mensaje de confirmación del registro.
 
 
 
