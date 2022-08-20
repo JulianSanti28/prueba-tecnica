@@ -43,7 +43,7 @@ public class MovieController {
     }
 
     /*Get Movies Order By Alphabet GET Method*/
-    /*No es necesario poner entre paréntesis el nombre del parámetro en @RequestParam debido a que se mapean a atrobutos que se llaman igual*/
+    /*No es necesario poner entre paréntesis el nombre del parámetro en @RequestParam debido a que se mapean a atributos que se llaman igual*/
     @GetMapping("/movies")
     public ResponseEntity<?> getAllMoviesOrderByAlphabet(@RequestParam int total, @RequestParam String order){
         List<Movie> movies = this.movieService.getAllMoviesOrderByAlphabet(total, order);
