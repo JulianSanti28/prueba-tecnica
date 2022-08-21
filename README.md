@@ -15,9 +15,9 @@ El proyecto ya cuenta en su base path con el archivo usado como repositorio (mov
 - [x] El proyecto iniciará en el puerto 8080.
 - [x] Ahora está listo para recibir peticiones en cada uno de sus 3 endpoints.  
 
-# Enpoints
+# Endpoints
 
-## El primer enpoint permite obtener un registro dentro del repositorio por el id de la película. Acceda a esta URL desde un cliente REST como Postman o el mismo navegador web para acceder a la respuesta del servicio.
+## El primer endpoint permite obtener un registro dentro del repositorio por el id de la película. Acceda a esta URL desde un cliente REST como Postman o el mismo navegador web para acceder a la respuesta del servicio.
 
 Método: GET
 
@@ -33,7 +33,7 @@ En caso de no encontrar el id, el servicio responderá con un código de estado 
 ![image](https://user-images.githubusercontent.com/67648220/185752069-9ed82bf8-1ad6-4ba5-a052-92c35e9e7c47.png)
 
 
-## El segundo enpoint permite obtener una cantidad de registros dada ordenados de forma descendente o ascendente según sea el valor del parámetro en la URL. Acceda a esta URL para interactuar con el servicio.
+## El segundo endpoint permite obtener una cantidad de registros dada ordenados de forma descendente o ascendente según sea el valor del parámetro en la URL. Acceda a esta URL para interactuar con el servicio.
 
 Método: GET 
 
