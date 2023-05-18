@@ -1,26 +1,2 @@
-24/04/2023,Tiquetera de Almuerzos,225000,Restaurante,Almuerzos para el mes de Abril y Mayo,Necesidad
-24/04/2023,Mercado Desayunos Cenas,55000,Supermercado ARA Desayunos para la semana,Necesidad
-25/04/2023,Transporte,7500,InDriver,Viaje a cenar a un restaurante,Necesidad
-25/04/2023,Cena,46000,Jumbo,Cena en Jumbo Campanario,Gusto
-26/04/2023,Factura Celular,37000,Movistar Pago de plan de datos ,Necesidad
-27/04/2023,Buzo GEF,97000,GEF,Compra online de un buzo,Gusto
-28/04/2023,Comida rápida,25000,Food Fusion,Comida rápida para la cena,Gusto
-29/04/2023,Almuerzo,25000,La Ruleta Gourmet,Almuerzo de sábado,Gusto
-29/04/2023,Helado,7000,Monserrat Plaza,Helado de media tarde,Gusto
-30/04/2023,Mercado Desayunos/Cenas,60000,Supermercado ARA,Desayunos para la semana,Necesidad
-01/05/2023,Piscina,25000,Pisojé,Ejercicio y diversión de Lunes festivo,Gusto
-02/05/2023,Sombrilla,15000,Dollarcity,Necesidad para el clima,Necesidad
-03/05/2023,Maletín,229000,Totto,Necesitaba un bolso nuevo,Necesidad
-04/05/2023,Transporte,15000,InDriver,Pasajes para tomar transporte viaje a Cali,Necesidad
-05/05/2023,Antigripales,10000,Droguería,Llegué enfermo del viaje a Cali,Necesidad
-06/05/2023,Antigripales,10000,Droguería,Llegué enfermo del viaje a Cali,Necesidad
-07/05/2023,Almuerzo,45000,Restaurante,Almuerzo porque me sentía mejor después de la gripa,Gusto
-08/05/2023,Mercado Desayunos/Cenas,75000,Supermercado ARA,Desayunos para la semana,Necesidad
-09/05/2023,Desayuno,9000,Fac Contables,No alcancé a desayunar en casa,Gusto
-10/05/2023,Correa,20000,Miscelanea,Necesitaba una correa,Necesidad
-11/05/2023,Respuesto Máquina,26000,Repuesto para una máquina eléctrica,Necesitaba el respuesto porque se me dañó,Necesidad
-12/05/2023,Arriendo,295000,Arrendador,Pago del arriendo de mi vivienda,Necesidad
-12/05/2023,Rumba,170000,Lev3l Club,Salida con amigos,Gusto
-13/05/2023,Almuerzo,12000,La Ruleta Gourmet,Almuerzo de sábado,Gusto
-14/05/2023,Mercado Desayunos/Cenas,45000,Supermercado ARA,Desayunos para la semana,Necesidad
-15/05/2023,Implementos de Aseo,25000,Supermercado ARA,Implementos que necesitaba de aseo,Necesidad
+Fecha,Item,Precio,Lugar,Razón,Categoría
+
